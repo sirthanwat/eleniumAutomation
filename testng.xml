@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+		<listener class-name="listeners.ITestNGListener"></listener>
+
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="listeners.ITestCase1" />
+			<class name="pageActions.TC_001_Login" />
+			<!-- <class name="testCases.TC_001_Login_JavaPOM" /> <class name="actionsClass.KeyboardOper_PageDown" 
+				/> <class name="assertion.AssertionTest" /> <class name="cssLocator.CSS_Syntax" 
+				/> <class name="basicsConcept.FatchPageData" /> <class name="wait.WebDriverWaits_Explicit" 
+				/> <class name="assertion.AssertionTest1" /> <class name="inheritanceinSel.Child" 
+				/> <class name="assertion.AssertionTest2" /> <class name="actionsClass.MouseOper_MoveToEle" 
+				/> <class name="xpathLocator.Xpath_Syntax" /> <class name="assertion.AssertionTest3" 
+				/> <class name="testCases.TC_001_Reg_PageFacNJavaPOM" /> <class name="wait.WebDriverWaits_pageLoadTimeOut" 
+				/> <class name="basicsConcept.LaunchFireFoxBrowser" /> <class name="actionsClass.MouseOper_RightClick" 
+				/> <class name="basicsConcept.DropDown" /> <class name="basicsConcept.LaunchChromeBrowser" 
+				/> <class name="cssLocator.CSS_Syntax2" /> <class name="exceptions.seleniumExceptions" 
+				/> <class name="wait.JavaWait_Thread" /> <class name="actionsClass.Actions_KeyboardOper" 
+				/> <class name="actionsClass.MouseOper_LeftClick" /> <class name="debugging.Debug0" 
+				/> <class name="basicsConcept.BrowserActivity" /> <class name="assertion.SoftAssertionTest" 
+				/> <class name="actionsClass.Keyboard_MouseOper_togather" /> <class name="actionsClass.KeyboardOper_cltA_cltBachSpace" 
+				/> <class name="basicsConcept.FatchElementData" /> <class name="basicsConcept.LaunchBrowser" 
+				/> <class name="wait.WebDriverWaits_Implicit" /> <class name="testCases.TC_001_Reg_PageFac" 
+				/> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

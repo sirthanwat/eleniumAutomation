@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="listeners.ITestNGListener"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="listeners.ITestCase1"/>
+      <class name="pageActions.TC_001_Login"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="pageActions.TC_001_Login">
+        <methods>
+          <include name="enterRegData"/>
+          <include name="initiatBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- pageActions.TC_001_Login -->
+      <class name="listeners.ITestCase1">
+        <methods>
+          <include name="initiatBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- listeners.ITestCase1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
